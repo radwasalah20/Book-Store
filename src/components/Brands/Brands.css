@@ -1,0 +1,27 @@
+.brands{
+    background-color: var(--bgColor);
+}
+.brands-container{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+/* @media screen and (max-width: 992px){
+    .brands-container{
+        flex-wrap: wrap;
+    }
+} */
+@media screen and (max-width: 820px){
+    .brands-container{
+        flex-wrap: wrap;
+    }
+
+}
+@media screen and (max-width: 420px){
+    .brands-container{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+
+}

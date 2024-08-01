@@ -1,0 +1,148 @@
+/* ul,
+p,
+h1 {
+  margin: 0 !important;
+  padding: 0 !important;
+} */
+
+header {
+  background-color: var(--bgColor);
+  box-shadow: 10px 10px 10px hsl(0, 0%, 87%);
+  position: fixed;
+  width: 100%;
+  z-index: 111;
+}
+header .leftNav .bookIcon {
+  color: var(--blue); /*blue */
+  font-size: 40px;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+header nav ul .active {
+  color: var(--blue); /*blue */
+}
+header nav ul li a {
+  text-decoration: none;
+  color: var(--babyblue);
+  transition: 0.3s;
+}
+header nav ul li a:hover,
+header .pop-upMenu ul.popup li a:hover{
+  color: var(--blue); /*blue */
+}
+header nav .menuIcon {
+  font-size: 26px;
+  color: rgb(156 155 153);
+  cursor: pointer;
+  transition: 0.3s;
+  display: none;
+}
+header nav .menuIcon:hover {
+  color: var(--blue); /*blue */
+}
+header .rightNav button {
+  padding: 5px 15px;
+  border-radius: 7px;
+  border: 1px solid #3e516f75;
+  background-color: rgb(244, 242, 238);
+  /* color: rgb(156 155 153); */
+  color: var(--blue); /*blue */
+  transition: 0.3s;
+}
+header .rightNav button a{
+  text-decoration: none;
+  color: var(--babyblue);
+}
+header .rightNav button a:hover{
+  color: var(--blue);
+}
+header .rightNav button:hover {
+  background-color:#3e516f26;
+  color: rgb(157 90 47);
+}
+header .rightNav .bagIcon {
+  color: var(--blue) !important; /*blue */
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  header nav ul li {
+    display: none;
+  }
+  header nav .menuIcon {
+    display: flex;
+  }
+}
+
+header .pop-upMenu{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 111;
+  /* inset: 0; */
+  background: rgb(40 40 48 / 52%)
+}
+header .pop-upMenu ul.popup{
+  width: 50%;
+  border-radius: 1rem;
+  background-color:rgb(244, 242, 238);
+  margin: 2rem auto 0 auto;
+  padding: 1rem 2rem;
+  /****************************** pop up Animation ***************************/
+  perspective: 400px;
+}
+header .pop-upMenu ul.popup li{
+  border-bottom: 1px solid rgb(156 155 153 / 24%);
+  list-style-type: none;
+  padding:0.5rem 0 1rem ;
+  /****************************** pop up Animation ***************************/
+  animation: modalAnimation 600ms forwards ease ;
+  transform: rotateY(-90deg);
+}
+header .pop-upMenu ul.popup li:last-child{
+  border-bottom: none;
+}
+header .pop-upMenu ul.popup li a{
+  text-decoration: none;
+  color: rgb(156 155 153);
+  font-size: 1rem;
+  transition: 0.3s;
+}
+header .pop-upMenu ul.popup li:first-child{
+  text-align: right;
+  cursor: pointer;
+  border-bottom: none;
+  transition: 0.3s;
+
+}
+header .pop-upMenu ul.popup li:first-child:hover{
+  color: var(--blue);
+  /* rotate: 180deg; */
+}
+
+/****************************** pop up Animation ***************************/
+@keyframes modalAnimation{
+  to{
+    transform: rotateY(0);
+    opacity: 1;
+  }
+
+}
+header .pop-upMenu ul.popup li:nth-child(2){
+  animation-delay: 200ms;
+}
+header .pop-upMenu ul.popup li:nth-child(3){
+  animation-delay: 400ms;
+}
+header .pop-upMenu ul.popup li:nth-child(4){
+  animation-delay: 600ms;
+}
+header .pop-upMenu ul.popup li:nth-child(5){
+  animation-delay: 800ms;
+}

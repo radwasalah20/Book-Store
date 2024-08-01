@@ -1,0 +1,5 @@
+marquee{
+    background-image: var(--lineargradirent);
+    margin-top: 89px;
+    padding: 10px;
+}
