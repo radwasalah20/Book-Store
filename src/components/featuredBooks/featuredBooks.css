@@ -1,0 +1,48 @@
+.featurebook-box img {
+  width: 200px;
+  height: 280px;
+  margin-bottom: 10px;
+}
+.featurebook-info h3 {
+  color: var(--blue);
+  text-transform: capitalize;
+}
+.featurebook-info h5 span {
+  color: var(--babyblue);
+}
+.swipertwo {
+  display: none;
+}
+
+@media screen and (max-width: 870px) {
+  .swwiperone,
+  .swiperthree {
+    display: none;
+  }
+  .swipertwo {
+    display: block;
+  }
+}
+.parentOfShowallBtn {
+  position: relative;
+}
+.parentOfShowallBtn:hover .showAllBtn,
+.doublearrowIcon {
+  color: var(--blue);
+}
+.showAllBtn {
+  padding: 10px 30px;
+  border-radius: 7px;
+  border: 1px solid #3e516f75;
+  background-color: rgb(244, 242, 238);
+  color: var(--babyblue); /*blue */
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.doublearrowIcon {
+  position: absolute;
+  right: 7px;
+  bottom: 1px;
+  color: var(--babyblue);
+}

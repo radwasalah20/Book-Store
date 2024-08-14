@@ -16,3 +16,18 @@
     --bgColor: rgb(244, 242, 238);
 
 }
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    background-color: var(--bgColor) !important;
+}
+div:where(.swal2-container) h2:where(.swal2-title) {
+    color: var(--blue) !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+    background-color: var(--babyblue) !important;
+    color: var(--blue) !important;
+}
+
+.active{
+    color: var(--blue)
+}

@@ -30,10 +30,14 @@ function Login() {
           password: values.password,
         }
       );
-      const token = response. data.data.token;
-      console.log("token:" , token)
-      console.log("login successful:", response.data);
-      navigate("/Home");
+      const token = response.data.data.token;
+
+      if (token) {
+        navigate("/Home")
+      } else {
+        navigate("/login")
+      }
+
     } catch (error) {
       console.error("login error:", error);
 

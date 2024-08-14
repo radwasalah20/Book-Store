@@ -1,0 +1,12 @@
+.sideBar {
+  background-color: var(--bgColor);
+  width: 15%;
+  position: fixed;
+  height: 100vh;
+  border-right: 1px solid var(--babyblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

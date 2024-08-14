@@ -21,9 +21,11 @@ header nav ul li {
   list-style-type: none;
   margin-bottom: 5px;
 }
-header nav ul .active {
-  color: var(--blue); /*blue */
-}
+
+
+/* header nav ul .active {
+  color: var(--blue);
+} */
 header nav ul li a {
   text-decoration: none;
   color: var(--babyblue);
@@ -66,7 +68,7 @@ header .rightNav button:hover {
 header .rightNav .bagIcon {
   color: var(--blue) !important; /*blue */
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -145,4 +147,12 @@ header .pop-upMenu ul.popup li:nth-child(4){
 }
 header .pop-upMenu ul.popup li:nth-child(5){
   animation-delay: 800ms;
+}
+
+
+.countSpan{
+  position: absolute;
+    top: 4px;
+    left: 16px;
+    color: white;
 }

@@ -1,0 +1,44 @@
+.table > :not(caption) > * > * {
+    color: var(--blue) !important;
+    background-color: #7dd0d84a !important;
+}
+.deleteBtn{
+    /* padding: 5px 15px; */
+    border-radius: 7px;
+    border: 1px solid #3e516f75;
+    background-color:var(--bgColor);
+    color: var(--blue); /*blue */
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.deleteBtn:hover{
+    background-color:#5f7cab57;
+    color: var(--blue);
+}
+.table > :not(caption) > * > * {
+    padding: 1.5rem 2.5rem;
+}
+
+ .title{
+    padding-top: 120px;
+    color: var(--blue);
+ }
+ .emptyText{
+    color: var(--babyblue);
+ }
+ .cartpage{
+    min-height: 100vh;
+ }
+
+ .qtyBtn{
+    padding: 2px 5px;
+    border-radius: 7px;
+    border: 1px solid #3e516f75;
+    background-color:var(--bgColor);
+    color: var(--blue);
+    transition: 0.3s;
+    text-decoration: none;
+    margin: 8px;
+ }

@@ -2,6 +2,7 @@ import React from "react";
 import "./Brands.css";
 import { brandsData } from "../../Data/data";
 
+
 function Brands() {
   return (
     <section className="brands">

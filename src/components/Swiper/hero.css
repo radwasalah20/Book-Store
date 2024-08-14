@@ -12,6 +12,22 @@
    box-shadow: 0 12px 36px #000000bd;
 }
 
+.title-content h3{
+   color: var(--blue);
+   font-size: 50px;
+}
+.title-content p{
+   color: var(--babyblue);
+   text-transform: capitalize;
+   font-size: 18px;
+}
+.title-content span{
+   font-weight: bold;
+   color: var(--blue);
+   font-size: 20px;
+   margin-right: 10px;
+}
+
 @media screen and (max-width: 767px) { 
  .image{
    justify-content: center !important;
@@ -61,91 +77,3 @@
 .swiper-pagination-bullet-active {
    background-color: var(--babyblue);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .image{
-   position: relative;
-}
-.image .title-content{
-   position: absolute;
-   top: 25%;
-   left: 3rem;
-}
- */
-
-
-
-
-
-/* .heroSection{
-    width: 100%;
-    overflow: hidden;
-}
-.swiper-container{
-    max-width: 1880px !important;
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 120px 0;
-}
- .swiper-left p{
-    margin-top: 20px;
-    margin-bottom: 75px;
-    color: gray;
-
- }
- .slider-button{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    width: 100%;
- }
- .slider-button .slidebutton{
-    display: inline-block;
-    font-size: 18px;
-    color: var(--blue);
-    border-radius: 50%;
-    padding: 20px;
-    cursor: pointer     ;
-    z-index: 10;
- }
- .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
- .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
-    color: #7dd0d873;
- }
- @media (max-width:600px){
-    .swiper-right{
-        width: 90%;
-    }
- } */

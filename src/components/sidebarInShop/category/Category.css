@@ -1,0 +1,33 @@
+.sidebar-title{
+    color: var(--blue);
+    margin:  120px 0 30px !important;
+}
+
+.sidebar-label-container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.sidebar-label-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #d3d1d1;
+}
+.sidebar-label-container:hover input ~ .checkmark{
+    background-color: #ccc;
+}
+.sidebar-label-container input:checked ~ .checkmark{
+    background-color: var(--babyblue);
+}

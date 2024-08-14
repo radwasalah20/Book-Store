@@ -1,0 +1,49 @@
+
+h1.libraryText{
+    margin: 100px 0 10px 30px;
+    /* margin-left: 30px; */
+    color: var(--blue);
+    
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  z-index: 111;
+}
+.card {
+  margin: 20px;
+  border: 2px solid var(--lineargradirent);
+  padding: 5px 20px 20px;
+  cursor: pointer;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bag-icon {
+  color: var(--blue);
+}
+
+.addToCartLink{
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: 1px solid #3e516f75;
+    background-color: rgb(244, 242, 238);
+    color: var(--blue);
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+.addToCartLink:hover{
+    background-color:#3e516f26;
+    color: var(--babyblue);
+}
+
+.viewDetailsLink{
+    text-decoration: none;
+    color: var(--babyblue);
+}
