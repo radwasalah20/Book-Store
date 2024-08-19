@@ -13,15 +13,10 @@ export function CartContextProvider({ children }) {
   const postCartData = async (books) => {
     books.map((book) => {
       setBook(book)
-
       const token = Cookies.get('token');
       const bookId = book.id;
-
-
     })
   }
-
-
   //   test()
   // useEffect(()=> {
   //   } , [])
@@ -45,10 +40,10 @@ export function CartContextProvider({ children }) {
     postCartData(newCartItems, book); /* sends the updated cart data to the server */
   }
 
+
+
   return (
-    <CartContext.Provider
-      value={{ cartItems, setCartItems, addToCart }}
-    >
+    <CartContext.Provider value={{ cartItems, setCartItems, addToCart }}>
       {children}
     </CartContext.Provider>
   );

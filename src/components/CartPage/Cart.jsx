@@ -16,8 +16,8 @@ function Cart() {
         headers: {
           Authorization: `Bearer ${Cookies.get('token')}`
         }
-       
-      }).then((response)=> {
+
+      }).then((response) => {
         setCartItems(response.data.data)
       })
     } catch (error) {
@@ -25,24 +25,14 @@ function Cart() {
 
     }
   };
-
-
   useEffect(() => {
     getAllProducts()
   }, [])
 
 
-
-
-
-
-
-  function deleteItem(item){
-
+  function deleteItem(item) {
     
   }
-
-
 
 
   return (
@@ -61,7 +51,7 @@ function Cart() {
               <table className="table table-striped  mt-5 ">
                 <thead>
                   <tr>
-                    <th>Book Id</th>  
+                    <th>Book Id</th>
                     <th>Price</th>
                     <th>Qty</th>
                     <th>Total</th>
@@ -79,7 +69,7 @@ function Cart() {
                         <td>{item.price}</td>
                         <td>
                           <Link
-                          // decrementQty(item.id)
+                            // decrementQty(item.id)
                             onClick={() => (console.log(item.bookId))}
                             className="qtyBtn "
                           >
@@ -87,7 +77,7 @@ function Cart() {
                           </Link>
                           {item.qty}
                           <Link
-                          // incrementQty(item.id)
+                            // incrementQty(item.id)
                             onClick={() => console.log(item.bookId)}
                             className="qtyBtn "
                           >
@@ -97,7 +87,7 @@ function Cart() {
                         {/* {total} */}
                         <td>  $</td>
                         <td>
-                          <BsX 
+                          <BsX
                             className="deleteBtn"
                             onClick={() => {
                               deleteItem(item.bookId);
